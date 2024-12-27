@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>domovia.store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/main.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Domovia</div>
+    <div class="searchbar">
+      <input class="searchbarinput" type="text" placeholder="Search for items...">
+      <a href=""><img src="/public/imgs/search.svg" alt=""></a>
+    </div>
+    <div class="actions">
+      <a href=""><img src="/public/imgs/shopping_cart.svg" alt=""></a>
+      <a href=""><img src="/public/imgs/login.svg" alt=""></a>
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- Sidebar (Kategorie) -->
+    <aside class="categories">
+      <h1 style="font-weight: 300; font-size: 1.6rem;">KATEGORIE</h1>
+      <div class="category">
+        <button id="Grill" class="category-btn">
+          GRILOVÁNÍ<img id="arrow_downward" src="/public/imgs/arrow_downward.svg" alt="">
+        </button>
+        <ul class="subcategory">
+          <li>NOŽE, OBRACEKY, RUKAVICE</li>
+          <li>PÁNVE, HRNCE</li>
+          <li>UHLÍ, PODPALOVAČE, ČISTIČE</li>
+        </ul>
+      </div>
+      <div class="category">
+        <button class="category-btn">DEKORACE<img id="arrow_downward" src="/public/imgs/arrow_downward.svg" alt=""></button>
+        <ul class="subcategory">
+          <li>PORCELÁN, SKLO</li>
+          <li>UMĚLÉ KVĚTINY</li>
+        </ul>
+      </div>
+      <div class="category">
+        <button class="category-btn">DĚTSKÉ<img id="arrow_downward" src="/public/imgs/arrow_downward.svg" alt=""></button>
+        <ul class="subcategory">
+          <li>POSTÝLKY</li>
+          <li>HRAČKY</li>
+          <li>DĚTSKÉ POTŘEBY</li>
+        </ul>
+      </div>
+    </aside>
+  
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Showroom -->
+      <div class="Showroom">
+        <div class="Showroom-slider">
+          <!-- Slides -->
+          <div class="slide active">
+            <img src="/public/imgs/grill.png" alt="Grill">
+            <div class="Showroomtxt">
+              <h1>Gril Chigaco 3</h1>
+              <p>Také už se těšíte, až si vychutnáte vaše oblíbené grilované pochoutky v obklopení rodiny a přátel?</p>
+              <div class="Showroomtxtflex">
+                <h3>6000 Kč ,-</h3>
+                <button class="Showroom-btn">K PRODUKTU</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/flowres.png" alt="Dekorace">
+            <div class="Showroomtxt">
+              <h1>Moderní Dekorace</h1>
+              <p>Dodejte svému domovu moderní nádech s našimi jedinečnými dekoracemi.</p>
+              <div class="Showroomtxtflex">
+                <h3>300 Kč ,-</h3>
+                <button class="Showroom-btn">K PRODUKTU</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="/public/imgs/hracky.png" alt="Hračky">
+            <div class="Showroomtxt">
+              <h1>Dětské Hračky</h1>
+              <p>Radost a zábava pro vaše děti s naším sortimentem hraček.</p>
+              <div class="Showroomtxtflex">
+                <h3>500 Kč ,-</h3>
+                <button class="Showroom-btn">K PRODUKTU</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Showroom-controls">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </div>
+  
+      <!-- Products Section -->
+      <section class="products">
+        <h2>Naše nejoblíbenější produkty</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="/public/imgs/grill.png" alt="Produkt 1">
+            <h3>Produkt 1</h3>
+            <p>Popis produktu 1.</p>
+            <button class="Showroom-btn">Detail</button>
+          </div>
+          <div class="product">
+            <img src="/public/imgs/grill.png" alt="Produkt 2">
+            <h3>Produkt 2</h3>
+            <p>Popis produktu 2.</p>
+            <button class="Showroom-btn">Detail</button>
+          </div>
+          <div class="product">
+            <img src="/public/imgs/grill.png" alt="Produkt 2">
+            <h3>Produkt 2</h3>
+            <p>Popis produktu 2.</p>
+            <button class="Showroom-btn">Detail</button>
+          </div>
+          <div class="product">
+            <img src="/public/imgs/grill.png" alt="Produkt 2">
+            <h3>Produkt 2</h3>
+            <p>Popis produktu 2.</p>
+            <button class="Showroom-btn">Detail</button>
+          </div>  
+          <!-- Další produkty -->
+        </div>
+      </section>
+    </main>
+  </div>
+  
+</body>
+<script src="/public/index.js"></script>
+</html>

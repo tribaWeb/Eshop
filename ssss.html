@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Test</title>
+  <style>
+    /* Reset stylů */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%; /* Plná výška stránky */
+      overflow-y: auto; /* Scrollbar na celé stránce */
+    }
+
+    /* Navbar */
+    .navbar {
+      position: static; /* Scrolluje s obsahem */
+      height: 80px;
+      width: 100%;
+      background-color: #ffcccb; /* Viditelná barva pro test */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    /* Obsah */
+    .content {
+      padding: 20px;
+    }
+
+    .long-content {
+      height: 2000px; /* Simulace dlouhého obsahu */
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">Navbar (Scrolls with Content)</header>
+  <div class="content">
+    <p>Scroll down to test. The navbar will scroll with the content and disappear.</p>
+    <div class="long-content"></div>
+  </div>
+</body>
+</html>
