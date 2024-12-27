@@ -17,11 +17,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-/** Start the Express server
+
 const server = app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 
-  // Initialize BrowserSync after the server starts
+ /** // Initialize BrowserSync after the server starts
   browserSync.init({
     proxy: `http://localhost:${PORT}`,
     files: [
@@ -32,4 +32,4 @@ const server = app.listen(PORT, () => {
     open: false,
     port: 3001,
   });
-}); */
+}); 
