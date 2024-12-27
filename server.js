@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-// Start the Express server
+/** Start the Express server
 const server = app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 
@@ -32,4 +32,4 @@ const server = app.listen(PORT, () => {
     open: false,
     port: 3001,
   });
-});
+}); */
