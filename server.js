@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
 
 const server = app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
-
- /** // Initialize BrowserSync after the server starts
+});
+ /*  Initialize BrowserSync after the server starts
   browserSync.init({
     proxy: `http://localhost:${PORT}`,
     files: [
@@ -33,3 +33,4 @@ const server = app.listen(PORT, () => {
     port: 3001,
   });
 }); 
+*/
