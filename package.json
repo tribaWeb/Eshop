@@ -15,5 +15,8 @@
     "browsersync": "^0.0.1-security",
     "express": "^4.21.2",
     "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
   }
 }
